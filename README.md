@@ -1,10 +1,8 @@
-
-
 ## Commands
 
 ### Run API examples
 
-``` bash
+```bash
 uvicorn main:app --reload
 uvicorn example.with_database.main:app --reload
 uvicorn example.with_tests.main:app --reload
@@ -12,22 +10,26 @@ uvicorn example.with_tests.main:app --reload
 
 ### Run API with Docker
 
-``` bash
+```bash
 docker build -t fast-api .
 docker run -d --name fast-api-examples -p 8000:80 fast-api
 ```
 
 ### Run Tests
 
-``` bash
+```bash
 pytests
 
 ```
 
 ### Generate requirements.txt
 
-``` bash
+```bash
 pip install pipreqs
 pipreqs example/with_database
 
 ```
+
+# Todo
+
+[] Read documentation part that talk about bigger applications. refer: [Bigger Applications](https://fastapi.tiangolo.com/tutorial/bigger-applications/)
