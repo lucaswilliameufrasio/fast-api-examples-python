@@ -14,4 +14,13 @@ uvicorn example.with_tests.main:app --reload
 
 ``` bash
 pytests
+
+```
+
+### Generate requirements.txt
+
+``` bash
+pip install pipreqs
+pipreqs example/with_database
+
 ```
